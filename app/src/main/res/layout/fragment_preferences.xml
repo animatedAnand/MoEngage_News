@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/blue"
+        app:title="MoEngage News"
+        app:titleTextColor="@color/white"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
+
+    <!-- Main Content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Option 1: Dark/Light Mode Switch -->
+        <Switch
+            android:id="@+id/switch_dark_light_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dark Mode"
+            android:textSize="20sp" />
+
+        <!-- Label for Font Family Selector -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Font Family"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:layout_alignParentEnd="true" />
+
+        <!-- Option 2: Font Family Selector -->
+        <Spinner
+            android:id="@+id/spinner_font_family"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/font_family_options"
+            android:prompt="@string/select_font_family"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_alignParentEnd="true" />
+
+    </LinearLayout>
+</RelativeLayout>

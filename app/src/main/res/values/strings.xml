@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">MoEngage News</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="bookmarks">Bookmarks</string>
+    <string name="news">News</string>
+    <string name="preferences">Preferences</string>
+
+    <string name="hint_search">Search…</string>
+    <string name="daily_news">For You</string>
+    <string name="headlines">Headlines</string>
+    <string name="source">Source</string>
+    <string name="saved">Saved</string>
+    <string name="source_image">Source Image</string>
+    <string name="text_ui_mode">UI Mode</string>
+    <string name="sample_news_desc">People are often put in a jam when they are asked a
+        question that they don\'t fully understand,
+        and try to talk their way out of it as they don\'t wish to reveal that they.</string>
+    <string name="save_news">Save news</string>
+    <string name="share_news">Share</string>
+    <string name="select_font_family">Select Font:</string>
+</resources>
